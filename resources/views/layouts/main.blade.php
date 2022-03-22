@@ -3,7 +3,10 @@
 @include('includes.head')
 <body>
     @include('includes.header')
-    <main>
+    <main 
+    style="background-image:url({{asset('images/collection-of-heroes.jpg')}}); 
+    background-repeat:repeat;
+    ">
         @yield('content')
     </main>
     @include('includes.footer')
