@@ -11243,3 +11243,26 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.img-comic {
+  width: 75%;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px white;
+}
+
+.shadow-azure {
+  text-shadow: 2px 2px #007BF7;
+}
+
+.black-layer {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.form-section {
+  height: 1080px;
+}
+
+.bg-heroes {
+  background-image: url("../../public/images/bg-dc-heroes.jpg");
+}
