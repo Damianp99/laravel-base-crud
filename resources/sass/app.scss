@@ -1,1 +1,7 @@
-@import '~bootstrap/scss/bootstrap.scss'
+@import '~bootstrap/scss/bootstrap.scss';
+@import 'show';
+@import 'generics';
+
+.bg-heroes{
+background-image: url('../../public/images/bg-dc-heroes.jpg')
+}
