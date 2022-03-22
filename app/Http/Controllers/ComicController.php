@@ -85,4 +85,12 @@ class ComicController extends Controller
     {
         //
     }
+
+    public function preview()
+    {
+        $comics = Comic::all();
+
+
+        return view('home', compact('comics'));
+    }
 }
