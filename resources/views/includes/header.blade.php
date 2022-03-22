@@ -1,6 +1,6 @@
 <header class="d-flex justify-content-center align-items-center ">
     <nav class="nav">
         <a class="nav-link h2" href="{{route('home')}}">Home</a>
-        <a class="nav-link h2" href="{{route('comics')}}">Index</a>
+        <a class="nav-link h2" href="{{route('comics.index')}}">Index</a>
       </nav>
 </header>
