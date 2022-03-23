@@ -20,8 +20,9 @@
                       <li class="list-group-item"><strong>Data: </strong>{{$comic->sale_date}}</li>
                       <li class="list-group-item"><strong>Tipologia: </strong>{{$comic->type}}</li>
                     </ul>
-                    <div class="card-body">
-                      <a href="{{route('comics.show',$comic->id)}}" class="card-link">Più informazioni</a>
+                    <div class="card-body d-flex justify-content-between">
+                      <a href="{{route('comics.show',$comic->id)}}" class="card-link">Più informazioni </a>
+                      <a href="{{route('comics.edit',$comic->id)}}" class="card-link"><i class="fa-solid fa-pen"></i></a>
                     </div>
                 </div>
             </div>
