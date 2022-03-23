@@ -25,7 +25,7 @@
                 </div>
                 <div class="col-6 shadow-azure">
                     <label for="description" class="form-label">Descrizione</label>
-                    <textarea id="description" rows="5" class="form-control" name="description" value="{{$comic->description}}"></textarea>
+                    <textarea id="description" rows="5" class="form-control" name="description">{{$comic->description}}</textarea>
                 </div>
                 <div class="col-6 shadow-azure">
                     <label for="thumb" class="form-label">Immagine</label>
