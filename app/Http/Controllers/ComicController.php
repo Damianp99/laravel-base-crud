@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comic;
 use Illuminate\Http\Request;
+use Symfony\Component\VarDumper\Cloner\Data;
 
 class ComicController extends Controller
 {
@@ -63,9 +64,10 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Comic $team)
     {
-        //
+
+        return view('comics.edit', compact($team));
     }
 
     /**
@@ -75,9 +77,12 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Comic $comic)
     {
-        //
+        $data = $request->all();
+        $comic->fill($data);
+        $comic->save();
+        return redirect()->route('comics.show', $comic->id);
     }
 
     /**
